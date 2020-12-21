@@ -1,12 +1,13 @@
 import React from 'react'
+import projectReducer from '../../store/reducers/projectReducer';
 
-const ProjectSummary = () => {
+const ProjectSummary = ({project}) => {
     return(
         <div className='card z-depth-0 project-summary'>
-                <div className="grey-text text-darken-3">
+                <div className="card-content grey-text text-darken-3">
 
                     <span className="card-title">
-                        Project Title
+                        {project.title}
                     </span>
                     <p>Posted By Net NinJS</p>
                     <p className='grey-text'>3rd September, 2am</p>
